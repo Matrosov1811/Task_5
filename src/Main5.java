@@ -13,7 +13,11 @@ public class Main5 {
                 break;
             case '*': System.out.println(a + " * " + b + " = " + (a * b));
                 break;
-            case '/': System.out.println(a + " / " + b + " = " + (a / b));
+            case '/': if (b == 0) {
+                System.out.println("На ноль делить нельзя!");
+                break;
+            }
+                System.out.println(a + " / " + b + " = " + (a / b));
                 break;
             default:  System.out.println("Вы ввели некорректный оператор");
                 break;
